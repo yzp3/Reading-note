@@ -1,4 +1,5 @@
 ## C++
+
 ### 1.sizeof
 
 ```cpp
@@ -24,6 +25,7 @@ cout<<sizeof(a)<<endl;  //1
 */
 cout<<sizeof(b)<<endl;  //1
 ```
+
 ```cpp
 int GetSize(int data[]){
     return sizeof(data);
@@ -39,7 +41,9 @@ int size3 = GetSize(data1);//数组作为形参传递自动退化为指针
 
 printf("%d%d%d", size1, size2, size3);//20 4 4
 ```
+
 ### 2.构造函数传参
+
 ```cpp
 class A{
     //构造函数形参是自己的一个实例，会无限递归调用导致栈溢出
@@ -51,4 +55,9 @@ class A{
 }
 ```
 
+### 3.纯虚函数、虚函数和普通函数的区别
 
+### 4.struct和class的区别
+
+- 默认的成员访问记基类继承，struct：public；class：private
+- class”这个关键字还用于定义模板参数，就像“typename”。但关键字“struct”不用于定义模板参数
